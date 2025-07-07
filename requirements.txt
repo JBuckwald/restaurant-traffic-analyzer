@@ -5,3 +5,4 @@ time
 os
 matplotlib
 seaborn
+kagglehub[pandas-datasets]
