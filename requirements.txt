@@ -2,3 +2,6 @@ requests
 pandas
 json
 time
+os
+matplotlib
+seaborn
