@@ -1,7 +1,6 @@
 # Restaurant Traffic Analyzer
 
-## This Python application analyzes data from the Yelp Academic Dataset to calculate a weighted "Traffic Score"
-## for restaurants in a given city, identifying peak dining hours by combining "review" and "check-in" data.
+## This Python application analyzes data from the Yelp Academic Dataset to calculate a weighted "Traffic Score" for restaurants in a given city, identifying peak dining hours by combining "review" and "check-in" data.
 
 ![Sample Heatmap](results_data/philadelphia_combined_heatmap.png)
 
