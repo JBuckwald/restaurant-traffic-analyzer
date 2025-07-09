@@ -45,8 +45,15 @@ def create_peak_grid_from_reviews(df):
     df['datetime'] = pd.to_datetime(df['date'])
     df['day_of_week'] = df['datetime'].dt.day_name()
     df['hour'] = df['datetime'].dt.hour
+    
     peak_grid = df.groupby(['day_of_week', 'hour']).size().unstack(fill_value=0)
+   
     day_order = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    peak_grid = peak_grid.reindex(day_order, fill_value=0)
+
+    all_hours = range(24)
+    peak_grid = peak_grid.reindex(columns=all_hours, fill_value=0)
+
     return peak_grid.reindex(day_order)
 
 def create_peak_grid_from_checkins(df):

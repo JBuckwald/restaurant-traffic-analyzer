@@ -1,10 +1,5 @@
-requests
 pandas
-json
-time
-os
 matplotlib
 seaborn
 kagglehub[pandas-datasets]
-argparse
-
+pytest
